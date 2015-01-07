@@ -73,6 +73,7 @@ public final class DiscardServer {
 							
 							p.addLast(new TestOut1Handler());
 							p.addLast(new TestOut2Handler());
+							
 						}
 					});
 

@@ -17,9 +17,10 @@ public class TimeServer2Handler extends SimpleChannelInboundHandler<Object> {
 	}
 
 	@Override
-	public void channelRead(ChannelHandlerContext arg0, Object arg1) throws Exception {
-		super.channelRead(arg0, arg1);
+	public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+		super.channelRead(ctx, msg);
 		System.out.println("TimeServer2Handler channelRead");
+		ctx.fireChannelRead(msg);
 	}
 
 	@Override
