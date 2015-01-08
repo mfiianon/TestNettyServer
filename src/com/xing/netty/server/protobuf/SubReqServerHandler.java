@@ -1,10 +1,10 @@
 package com.xing.netty.server.protobuf;
 
-import com.xing.netty.interfaces.SubscribeReqProto;
-import com.xing.netty.interfaces.SubscribeRespProto;
-
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+
+import com.xing.netty.interfaces.SubscribeReqProto;
+import com.xing.netty.interfaces.SubscribeRespProto;
 
 public class SubReqServerHandler extends SimpleChannelInboundHandler<Object> {
 
